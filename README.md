@@ -1,0 +1,8 @@
+# SEEL 4213 SOFTWARE ENGINEERING
+## GROUP 6
+
+| NO. | NAME | MATRIC NO. |
+| ----------- | ----------- | ----------- |
+| 1 | BEH ZHEN XIAN | A20EE0017 |
+| 2 | LOW LIE XIN | A20EE0106 |
+| 3 | VINCENT YEN WEI JIE | A20EE0225 | 
