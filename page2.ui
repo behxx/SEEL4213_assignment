@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FishDetailsWidget</class>
+ <widget class="QWidget" name="FishDetailsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1332</width>
+    <height>870</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QFrame" name="frame_5">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="button_return">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Verdana</family>
+              <pointsize>8</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 243, 248);
+color: rgb(40, 53, 72);
+border-radius: 10px;</string>
+            </property>
+            <property name="text">
+             <string>Back</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>10</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Verdana</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 243, 248);
+color: rgb(40, 53, 72);
+border-radius: 10px;</string>
+            </property>
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="text">
+             <string>Fish Record Management</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="margin">
+             <number>8</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="font">
+          <font>
+           <family>Verdana</family>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget::pane{
+	border: 1px solid #dedfe3;
+	color: rgb(242, 243, 248);
+	background-color: rgb(242, 243, 248);
+	background: solid;
+}
+
+QTabBar::tab{
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-color: rgb(222, 223, 227);
+	width: 200px;
+	height: 30px;
+	background:rgb(242, 243, 248);
+}
+
+QTabBar:tab:selected{
+	
+	background-color: rgb(242, 243, 248);
+}
+
+QTabBar:tab:!selected{
+	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #dedfe3, stop: 1 #f2f3f8);
+	color:rgb(40, 53, 72);
+margin-top: 6px;
+margin-bottom: -6px;
+}
+
+QTabBar:tab:hover{
+
+}
+
+QTabBar:tab:!selected:hover{
+	background-color: rgb(222, 223, 227);
+	color: rgb(40, 53, 72);
+}
+
+#detailWgt, #appealReasonWgt {
+	border: 2px solid gray;
+}
+
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Fish Record</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_7" stretch="3,1,9">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="styleSheet">
+                <string notr="true">background-color:  qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #87b3ec, stop: 1 #f6c1eb);
+border-radius: 20px;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QLabel" name="label_9">
+                  <property name="styleSheet">
+                   <string notr="true">background: transparent;
+color:rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Total number of fishes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="total_fishes">
+                  <property name="styleSheet">
+                   <string notr="true">background:transparent;
+color: rgb(255, 255, 255);
+font: 50pt &quot;MS Shell Dlg 2&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>15</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_4">
+               <property name="styleSheet">
+                <string notr="true">background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #fe8c74, stop: 1 #fecc7c);
+border-radius: 20px;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item>
+                 <widget class="QLabel" name="label_11">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background: transparent
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Male Fishes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="male_fishes">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 50pt &quot;MS Shell Dlg 2&quot;;
+background: transparent;</string>
+                  </property>
+                  <property name="text">
+                   <string>8</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_3">
+               <property name="styleSheet">
+                <string notr="true">background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #7adca7, stop: 1 #ebed99);
+border-radius: 20px;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background: transparent;</string>
+                  </property>
+                  <property name="text">
+                   <string>Female Fishes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="female_fishes">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 50pt &quot;MS Shell Dlg 2&quot;;
+background: transparent;
+</string>
+                  </property>
+                  <property name="text">
+                   <string>7</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_2">
+               <property name="styleSheet">
+                <string notr="true">background-color:qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #8cc9dc, stop: 1 #a0deff);
+border-radius: 20px;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background: transparent;</string>
+                  </property>
+                  <property name="text">
+                   <string>&gt;20cm Fishes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="less20_fishes">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 50pt &quot;MS Shell Dlg 2&quot;;
+background: transparent;</string>
+                  </property>
+                  <property name="text">
+                   <string>7</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="styleSheet">
+                <string notr="true">border-radius: 10px;
+background-color: rgb(242, 243, 248);
+height: 25px;
+
+color:rgb(40, 53, 72);
+padding: 0 8px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(242, 243, 248);
+	width: 90px;
+	height: 25px;
+}
+
+QPushButton:pressed {
+    background-color:  rgb(222, 223, 227);
+}</string>
+               </property>
+               <property name="text">
+                <string>Search</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="table_widget">
+             <property name="styleSheet">
+              <string notr="true">QHeaderView::section {
+	background-color: rgb(255, 255, 255);
+	color: rgb(40, 53, 72);
+	border: 1px solid #dedfe3;
+}
+
+QTableView {
+	background: rgb(255, 255, 255);
+	color: rgb(40, 53, 72);
+	gridline-color:rgb(222, 223, 227);
+	selection-background-color: rgb(242, 243, 248);
+}
+
+QTableCornerButton::section{
+	
+	background-color: rgb(255, 255, 255);
+}</string>
+             </property>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>true</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>Tag ID</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Species</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Gender</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Cage No.</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Length</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Comment</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Add / Update Fish Record</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout" stretch="3,3,3,3,0">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,1,2,5">
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(40, 53, 72);
+</string>
+               </property>
+               <property name="text">
+                <string>Tag ID</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="id">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(242, 243, 248);
+border-color:  rgb(242, 243, 248);
+height: 25px;
+padding: 0 8px;
+color: rgb(40, 53, 72);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,4,9,4,4,9,3">
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(40, 53, 72);</string>
+               </property>
+               <property name="text">
+                <string>Species</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="species_dropdown">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(242, 243, 248);
+border-color:  rgb(242, 243, 248);
+height: 25px;
+padding: 0 8px;
+color: rgb(40, 53, 72);
+font: 8pt &quot;MS Shell Dlg 2&quot;;
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Tilapia</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Catfish</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(40, 53, 72);</string>
+               </property>
+               <property name="text">
+                <string>Length (cm)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="input_length">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(242, 243, 248);
+border-color:  rgb(242, 243, 248);
+height: 25px;
+padding: 0 8px;
+color: rgb(40, 53, 72);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,4,9,4,4,9,3">
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(40, 53, 72);</string>
+               </property>
+               <property name="text">
+                <string>Gender</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="gender_dropdown">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(242, 243, 248);
+border-color:  rgb(242, 243, 248);
+height: 25px;
+padding: 0 8px;
+color: rgb(40, 53, 72);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Male</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Female</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(40, 53, 72);</string>
+               </property>
+               <property name="text">
+                <string>Weight (g)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="input_weight">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(242, 243, 248);
+border-color:  rgb(242, 243, 248);
+height: 25px;
+padding: 0 8px;
+color: rgb(40, 53, 72);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,4,9,4,4,9,3">
+             <item>
+              <spacer name="horizontalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(40, 53, 72);</string>
+               </property>
+               <property name="text">
+                <string>Cage No.</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="cage_dropdown">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(242, 243, 248);
+border-color:  rgb(242, 243, 248);
+height: 25px;
+padding: 0 8px;
+color: rgb(40, 53, 72);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_11">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(40, 53, 72);</string>
+               </property>
+               <property name="text">
+                <string>Comment</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="input_comment">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(242, 243, 248);
+border-color:  rgb(242, 243, 248);
+height: 25px;
+padding: 0 8px;
+color: rgb(40, 53, 72);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <spacer name="horizontalSpacer_12">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_update">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(242, 243, 248);
+	width: 90px;
+	height: 25px;
+}
+
+QPushButton:pressed {
+    background-color:  rgb(222, 223, 227);
+}</string>
+               </property>
+               <property name="text">
+                <string>Update</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_add">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(242, 243, 248);
+	width: 90px;
+	height: 25px;
+}
+
+QPushButton:pressed {
+    background-color:  rgb(222, 223, 227);
+}</string>
+               </property>
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_delete">
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(242, 243, 248);
+	width: 90px;
+	height: 25px;
+}
+
+QPushButton:pressed {
+    background-color:  rgb(222, 223, 227);
+}</string>
+               </property>
+               <property name="text">
+                <string>Delete</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>3</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

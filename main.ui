@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1331</width>
+    <height>831</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_15">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1" rowspan="2">
+        <widget class="QFrame" name="frame_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_5">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="5" column="0">
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="0">
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="3" column="0">
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="2" column="0">
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_5">
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/silver icons/icons/silver/cloud-drizzle.svg</pixmap>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_12">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(40, 53, 72);</string>
+                 </property>
+                 <property name="text">
+                  <string>Water Level</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="PlotWidget" name="waterGraph">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(242, 243, 248);
+border-radius:20px;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(138, 138, 138);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/silver icons/icons/silver/thermometer.svg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_10">
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(40, 53, 72);</string>
+                 </property>
+                 <property name="text">
+                  <string>Temperature</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="PlotWidget" name="tempGraph">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(242, 243, 248);
+border-radius:20px;
+
+QGraphicsView {
+    border: 2px solid #000000; /* Set border color and width */
+    border-radius: 5px; /* Set border radius for rounded corners */
+    box-shadow: 5px 5px 5px #888888; /* Set box shadow: offset-x offset-y blur-radius color */
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0">
+              <layout class="QGridLayout" name="gridLayout_11">
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_11">
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(40, 53, 72);</string>
+                 </property>
+                 <property name="text">
+                  <string>pH</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="PlotWidget" name="phGraph">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(242, 243, 248);
+border-radius:20px;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_4">
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/silver icons/icons/silver/droplet.svg</pixmap>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="0">
+              <widget class="QFrame" name="frame_4">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(242, 243, 248);
+border-radius:20px;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_13">
+                <item row="0" column="0">
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>15</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="1">
+                 <layout class="QGridLayout" name="gridLayout_14">
+                  <item row="0" column="4">
+                   <layout class="QHBoxLayout" name="horizontalLayout_3">
+                    <item>
+                     <widget class="QLabel" name="label_9">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(40, 53, 72);</string>
+                      </property>
+                      <property name="text">
+                       <string>pH limit</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_9">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>10</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_ph">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(40, 53, 72);
+padding: 0 8px;</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="2">
+                   <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                     <widget class="QLabel" name="label_8">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(40, 53, 72);</string>
+                      </property>
+                      <property name="text">
+                       <string>Temperature limit</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_8">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>10</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_temp">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(40, 53, 72);
+padding: 0 8px;</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                     <widget class="QLabel" name="label_14">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(40, 53, 72);</string>
+                      </property>
+                      <property name="text">
+                       <string>Water-level limit</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_7">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>10</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_water">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(40, 53, 72);
+padding: 0 8px;</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>50</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="3">
+                   <spacer name="horizontalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>50</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="1">
+                 <layout class="QGridLayout" name="gridLayout_10">
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_9">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_6">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(40, 53, 72);</string>
+                      </property>
+                      <property name="text">
+                       <string>Motor Left</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <spacer name="horizontalSpacer_10">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>10</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QSlider" name="slider_left">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(40, 53, 72);</string>
+                      </property>
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_5">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>50</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="2">
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_7">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(40, 53, 72);</string>
+                      </property>
+                      <property name="text">
+                       <string>Motor Right</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <spacer name="horizontalSpacer_11">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Fixed</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>10</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QSlider" name="slider_right">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="3">
+                   <spacer name="horizontalSpacer_6">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Fixed</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>30</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QPushButton" name="confirm_button">
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Verdana</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="whatsThis">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+	height: 25px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(222, 223, 227);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Confirm</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="2">
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>15</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="2">
+        <widget class="QFrame" name="frame_3">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 243, 248);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_6">
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 243, 248);
+
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="1" column="0" colspan="2">
+              <widget class="QFrame" name="frame_7">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>850</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_6">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="home_button">
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(40, 53, 72);
+background-color: rgb(222, 223, 227);
+padding: 5px;
+text-align:left;
+border-top-left-radius: 20px;
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Home</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/white icons/icons/white/home.svg</normaloff>:/white icons/icons/white/home.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QPushButton" name="history_button">
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+	text-align:left;
+	height: 25px;
+	padding: 0 5px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(222, 223, 227);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>History</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/silver icons/icons/silver/clock.svg</normaloff>:/silver icons/icons/silver/clock.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QPushButton" name="data_button">
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+	text-align:left;
+	height: 25px;
+	padding: 0 5px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(222, 223, 227);
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Fish Data</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/silver icons/icons/silver/database.svg</normaloff>:/silver icons/icons/silver/database.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QPushButton" name="location_button">
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+	text-align:left;
+	height: 25px;
+	padding: 0 5px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(222, 223, 227);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Location</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/silver icons/icons/silver/map-pin.svg</normaloff>:/silver icons/icons/silver/map-pin.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QPushButton" name="restore_button">
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+	text-align:left;
+	height: 25px;
+	padding: 0 5px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(222, 223, 227);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Restore</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/silver icons/icons/silver/refresh-ccw.svg</normaloff>:/silver icons/icons/silver/refresh-ccw.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="0">
+                 <widget class="QPushButton" name="pushButton_10">
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+	text-align:left;
+	height: 25px;
+	padding: 0 5px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(222, 223, 227);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>User Settings</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/silver icons/icons/silver/settings.svg</normaloff>:/silver icons/icons/silver/settings.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QPushButton" name="pushButton_12">
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(40, 53, 72);
+background-color: rgb(222, 223, 227);
+padding: 5px;
+text-align:left;
+border-top-left-radius: 20px;
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>My Profile</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/silver icons/icons/silver/monitor.svg</normaloff>:/silver icons/icons/silver/monitor.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="0">
+                 <widget class="QPushButton" name="pushButton_11">
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	color: rgb(40, 53, 72);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+	text-align:left;
+	height: 25px;
+	padding: 0 5px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(222, 223, 227);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Logout</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/silver icons/icons/silver/log-out.svg</normaloff>:/silver icons/icons/silver/log-out.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(138, 138, 138);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap>D:/Downloads/circle_screenshot_1_Create unique logo easily with Logomaker from Designs.ai (2).png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../../.designer/backup/resources.qrc"/>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

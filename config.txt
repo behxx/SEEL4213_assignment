@@ -1,0 +1,5 @@
+water_level = 7.0
+Temperature_value = 20.0
+ph_value = 20.0
+motor_right = 77
+motor_left = 34
